@@ -16,10 +16,10 @@ var retryCount = parseInt(process.env.SHORTID_RETRY_COUNT) || 0;
 */
 var requireDnsCheck = process.env.DNS_CHECK === "true";
 
-var ShortUrl = mongoose.model('ShortUrl', {
+var ShortUrl = mongoose.model('ShortUrl', new mongoose.Schema({
     shortId: { type: String, required: true, unique: true },
     originalUrl: { type: String, required: true, unique: false }
-});
+}));
 
 function create(originalUrl, done) {
     validateUrl(originalUrl, (err, urlObj) => {
