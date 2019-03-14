@@ -4,21 +4,23 @@
 	"description": "API project for freeCodeCamp",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"start-debug": "node --inspect server.js"
 	},
 	"dependencies": {
-		"express": "^5.0.0-alpha.2",
-		"mongodb": "^2.2.5",
-		"mongoose": "^4.5.7",
+		"body-parser": "^1.15.2",
 		"cors": "^2.8.1",
-		"body-parser": "^1.15.2"
+		"express": "^5.0.0-alpha.2",
+		"mongodb": "^3.1.13",
+		"mongoose": "^5.4.19",
+		"shortid": "^2.2.14"
 	},
 	"engines": {
 		"node": "4.4.5"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://hyperdev.com/#!/project/welcome-project"
+		"url": "https://github.com/rmourning-mt/boilerplate-project-urlshortener"
 	},
 	"keywords": [
 		"node",
